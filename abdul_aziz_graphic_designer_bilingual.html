@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Abdul Aziz — Graphic Designer Portfolio">
+<title>Abdul Aziz | Graphic Designer</title>
+<style>
+:root{--bg:#0b0e0b;--panel:#151b15;--ink:#f6f8f4;--muted:#aab5a7;--green:#b8ff49;--line:#2a3628}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;background:#0b0e0bee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:4}nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{font-size:1.2rem;font-weight:900;letter-spacing:-1px}.logo span,h1 span,.green{color:var(--green)}.links{display:flex;gap:22px;color:var(--muted);font-size:.92rem}.links a:hover{color:var(--green)}.right{display:flex;align-items:center;gap:7px}
+button,.btn{border:1px solid var(--green);border-radius:999px;padding:10px 15px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}.btn{background:var(--green);color:#10160b}.btn.alt{background:transparent;color:var(--ink);border-color:var(--line)}.lang{background:transparent;color:var(--ink);border-color:var(--line);padding:8px 10px}.lang.active{background:var(--green);color:#10160b;border-color:var(--green)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px;padding:85px 0 75px;min-height:590px}.eyebrow,.kicker{color:var(--green);text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:800}.eyebrow:before{content:'●';margin-right:9px}h1{font-size:clamp(3.3rem,7vw,6.5rem);line-height:.97;letter-spacing:-5px;margin:20px 0}h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;letter-spacing:-1.5px;margin:8px 0 16px}p{color:var(--muted)}.hero p{max-width:580px;font-size:1.08rem}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.art{min-height:350px;display:grid;place-items:center;position:relative}.orb{width:min(340px,78vw);aspect-ratio:1;border-radius:35% 65% 62% 38%/37% 35% 65% 63%;background:linear-gradient(145deg,#e0ff9f,var(--green),#4c8018);transform:rotate(-8deg);display:grid;place-items:center;color:#10160b;font-size:clamp(7rem,17vw,12rem);font-weight:900;letter-spacing:-12px;box-shadow:0 25px 100px #b8ff4920}.float{position:absolute;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-weight:700}.f1{top:12%;left:0;transform:rotate(-6deg)}.f2{right:0;bottom:12%;transform:rotate(5deg)}
+section{padding:70px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:28px}.head p{max-width:430px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{overflow:hidden;background:var(--panel);border:1px solid var(--line);border-radius:20px;transition:.2s}.card:hover{transform:translateY(-4px);border-color:var(--green)}.tile{height:205px;padding:20px;display:flex;align-items:end;position:relative;overflow:hidden}.tile:after{content:'';position:absolute;width:180px;height:180px;border:25px solid #ffffff30;border-radius:50%;right:-30px;top:-40px}.tile strong{font-size:2.1rem;line-height:1;position:relative;z-index:1;letter-spacing:-1px}.c1{background:linear-gradient(135deg,#ff714a,#ffc36b);color:#27120b}.c2{background:linear-gradient(135deg,#7359ff,#c6bbff);color:#17102e}.c3{background:linear-gradient(135deg,#164b42,#6ce2b2);color:#071b16}.c4{background:linear-gradient(135deg,#f4d76b,#f6a1bd);color:#351324}.c5{background:linear-gradient(135deg,#202a43,#8094c9)}.c6{background:linear-gradient(135deg,#b8ff49,#f2ffc4);color:#15210b}.body{padding:18px}.body h3{margin:0 0 4px}.body p{margin:0;font-size:.9rem}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}.service{padding:22px;border:1px solid var(--line);background:var(--panel);border-radius:17px}.service b{font-size:1.6rem;color:var(--green)}.service h3{margin:8px 0}.service p{font-size:.9rem;margin:0}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:center}.monogram{min-height:270px;display:grid;place-items:center;text-align:center;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,#1b241a,#10140f);font-size:clamp(3rem,7vw,5.5rem);line-height:1;font-weight:900;letter-spacing:-5px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.tag{border:1px solid var(--line);padding:6px 11px;border-radius:99px;color:#dce4d8;font-size:.85rem}
+.contact{background:var(--green);color:#11170b;padding:clamp(26px,5vw,55px);border-radius:25px;display:flex;justify-content:space-between;align-items:center;gap:25px}.contact p{color:#35452a;max-width:600px}.contact .kicker{color:#35452a}.contact .btn{background:#10160b;color:white;border-color:#10160b}.contact .btn.alt{background:transparent;color:#10160b;border-color:#52643e}
+footer{padding:25px 0;color:var(--muted);font-size:.88rem}.foot{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:60px}.art{min-height:300px}.grid{grid-template-columns:repeat(2,1fr)}.services{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.contact{display:block}.contact .actions{margin-top:20px}.links{gap:11px}.links a:nth-child(2){display:none}}
+@media(max-width:520px){nav{min-height:64px}.links{font-size:.8rem}.links a:nth-child(3){display:none}.navcta{display:none}h1{letter-spacing:-3px}.grid{grid-template-columns:1fr}.tile{height:220px}.head{display:block}.head p{margin-top:10px}.hero{min-height:auto}.float{font-size:.85rem}.orb{font-size:8rem}}
+</style>
+</head>
+<body>
+<header><nav class="wrap">
+<a class="logo" href="#home">ABDUL<span>AZIZ.</span></a>
+<div class="links"><a href="#work" data-en="Portfolio" data-bn="পোর্টফোলিও">Portfolio</a><a href="#services" data-en="Services" data-bn="সার্ভিস" >Services</a><a href="#about" data-en="About" data-bn="পরিচিতি">About</a><a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a></div>
+<div class="right"><button class="lang active" id="enBtn" type="button">EN</button><button class="lang" id="bnBtn" type="button">বাংলা</button><a class="btn navcta" href="#contact" data-en="Let’s Talk ↗" data-bn="কথা বলুন ↗">Let’s Talk ↗</a></div>
+</nav></header>
+<main>
+<section class="hero wrap" id="home"><div>
+<div class="eyebrow" data-en="Graphic Designer · Bangladesh" data-bn="গ্রাফিক ডিজাইনার · বাংলাদেশ">Graphic Designer · Bangladesh</div>
+<h1 data-en="Design that|makes you stand out." data-bn="এমন ডিজাইন|যা আপনাকে আলাদা করে।">Design that<br>makes you <span>stand out.</span></h1>
+<p data-en="Hi, I’m Abdul Aziz — a graphic designer creating bold visuals, memorable brands, and scroll-stopping social media designs that help businesses shine." data-bn="আমি আব্দুল আজিজ—একজন গ্রাফিক ডিজাইনার। আকর্ষণীয় ভিজ্যুয়াল, স্মরণীয় ব্র্যান্ড এবং ব্যবসার প্রচারের জন্য সোশ্যাল মিডিয়া ডিজাইন তৈরি করি।">Hi, I’m Abdul Aziz — a graphic designer creating bold visuals, memorable brands, and scroll-stopping social media designs that help businesses shine.</p>
+<div class="actions"><a class="btn" href="#work" data-en="Explore My Work ↘" data-bn="আমার কাজ দেখুন ↘">Explore My Work ↘</a><a class="btn alt" href="#contact" data-en="Contact Me" data-bn="যোগাযোগ করুন">Contact Me</a></div>
+</div><div class="art"><div class="orb">Aa</div><div class="float f1">✳ Brand <span class="green">Identity</span></div><div class="float f2">Design with <span class="green">purpose ↗</span></div></div></section>
+<section id="work"><div class="wrap"><div class="head"><div><div class="kicker" data-en="Selected work" data-bn="নির্বাচিত কাজ">Selected work</div><h2 data-en="A little bit of|creative magic." data-bn="সৃজনশীলতার|কিছু জাদু।">A little bit of<br>creative magic.</h2></div><p data-en="Sample portfolio concepts. Replace these tiles with your own completed designs and client projects." data-bn="এগুলো নমুনা পোর্টফোলিও ডিজাইন। এখানে আপনার নিজের তৈরি ডিজাইন ও ক্লায়েন্টের কাজ যোগ করুন।">Sample portfolio concepts. Replace these tiles with your own completed designs and client projects.</p></div>
+<div class="grid">
+<article class="card"><div class="tile c1"><strong>MAKE<br>IT BOLD.</strong></div><div class="body"><h3 data-en="Social Media Design" data-bn="সোশ্যাল মিডিয়া ডিজাইন">Social Media Design</h3><p data-en="Promotional posts, ads & campaigns" data-bn="প্রমোশনাল পোস্ট, বিজ্ঞাপন ও ক্যাম্পেইন">Promotional posts, ads & campaigns</p></div></article>
+<article class="card"><div class="tile c2"><strong>IDEAS<br>IN MOTION.</strong></div><div class="body"><h3 data-en="Brand Identity" data-bn="ব্র্যান্ড আইডেন্টিটি">Brand Identity</h3><p data-en="Logo concepts, colors & brand style" data-bn="লোগো, রং ও ব্র্যান্ডের স্টাইল">Logo concepts, colors & brand style</p></div></article>
+<article class="card"><div class="tile c3"><strong>GOOD<br>THINGS.</strong></div><div class="body"><h3 data-en="Poster Design" data-bn="পোস্টার ডিজাইন">Poster Design</h3><p data-en="Event posters & promotional artwork" data-bn="ইভেন্ট পোস্টার ও প্রচারণার ডিজাইন">Event posters & promotional artwork</p></div></article>
+<article class="card"><div class="tile c4"><strong>YOUR<br>STORY.</strong></div><div class="body"><h3 data-en="Business Graphics" data-bn="ব্যবসায়িক গ্রাফিক্স">Business Graphics</h3><p data-en="Business cards, flyers & print design" data-bn="ভিজিটিং কার্ড, ফ্লায়ার ও প্রিন্ট ডিজাইন">Business cards, flyers & print design</p></div></article>
+<article class="card"><div class="tile c5"><strong>LESS<br>NOISE.</strong></div><div class="body"><h3 data-en="Typography" data-bn="টাইপোগ্রাফি">Typography</h3><p data-en="Strong type-led visual compositions" data-bn="লেখাভিত্তিক আকর্ষণীয় ডিজাইন">Strong type-led visual compositions</p></div></article>
+<article class="card"><div class="tile c6"><strong>FRESH<br>THINKING.</strong></div><div class="body"><h3 data-en="Custom Creative" data-bn="কাস্টম ডিজাইন">Custom Creative</h3><p data-en="Unique visuals tailored to your idea" data-bn="আপনার আইডিয়া অনুযায়ী বিশেষ ডিজাইন">Unique visuals tailored to your idea</p></div></article>
+</div></div></section>
+<section id="services"><div class="wrap"><div class="kicker" data-en="What I do" data-bn="আমি যা করি">What I do</div><h2 data-en="Design services" data-bn="ডিজাইন সার্ভিস">Design services</h2><div class="services">
+<div class="service"><b>✳</b><h3 data-en="Logo Design" data-bn="লোগো ডিজাইন">Logo Design</h3><p data-en="Distinctive logos for your business." data-bn="আপনার ব্যবসার জন্য আলাদা লোগো।">Distinctive logos for your business.</p></div>
+<div class="service"><b>▧</b><h3 data-en="Social Media" data-bn="সোশ্যাল মিডিয়া">Social Media</h3><p data-en="Eye-catching Facebook and Instagram creatives." data-bn="ফেসবুক ও ইনস্টাগ্রামের আকর্ষণীয় পোস্ট।">Eye-catching Facebook and Instagram creatives.</p></div>
+<div class="service"><b>▤</b><h3 data-en="Poster & Flyer" data-bn="পোস্টার ও ফ্লায়ার">Poster & Flyer</h3><p data-en="Promotional designs for print and digital." data-bn="প্রিন্ট ও অনলাইনের প্রচারণামূলক ডিজাইন।">Promotional designs for print and digital.</p></div>
+<div class="service"><b>◇</b><h3 data-en="Branding" data-bn="ব্র্যান্ডিং">Branding</h3><p data-en="Consistent visual identity for your brand." data-bn="আপনার ব্র্যান্ডের জন্য একরকম ভিজ্যুয়াল পরিচিতি।">Consistent visual identity for your brand.</p></div>
+</div></div></section>
+<section id="about"><div class="wrap about"><div class="monogram">ABDUL<br><span class="green">AZIZ.</span></div><div><div class="kicker" data-en="A little about me" data-bn="আমার সম্পর্কে">A little about me</div><h2 data-en="Good design is|good communication." data-bn="ভালো ডিজাইন|ভালো যোগাযোগ।">Good design is<br>good communication.</h2><p data-en="I’m Abdul Aziz, a graphic designer who enjoys turning ideas into clear, attractive visuals. I learn about your goals first, then create designs that fit your audience and brand." data-bn="আমি আব্দুল আজিজ। আইডিয়াকে সুন্দর ও স্পষ্ট ভিজ্যুয়ালে রূপ দিতে ভালোবাসি। প্রথমে আপনার লক্ষ্য বুঝে তারপর আপনার ব্র্যান্ড ও দর্শকের উপযোগী ডিজাইন তৈরি করি।">I’m Abdul Aziz, a graphic designer who enjoys turning ideas into clear, attractive visuals. I learn about your goals first, then create designs that fit your audience and brand.</p><p data-en="Whether you’re starting a business or promoting a product, let’s create something people remember." data-bn="নতুন ব্যবসা শুরু করছেন বা পণ্যের প্রচার করছেন—চলুন এমন কিছু তৈরি করি যা মানুষ মনে রাখবে।">Whether you’re starting a business or promoting a product, let’s create something people remember.</p><div class="tags"><span class="tag" data-en="Creative Thinking" data-bn="সৃজনশীল চিন্তা">Creative Thinking</span><span class="tag" data-en="Clean Layouts" data-bn="পরিচ্ছন্ন লেআউট">Clean Layouts</span><span class="tag" data-en="Brand Consistency" data-bn="ব্র্যান্ডের সামঞ্জস্য">Brand Consistency</span></div></div></div></section>
+<section id="contact"><div class="wrap"><div class="contact"><div><div class="kicker" data-en="Have a project in mind?" data-bn="আপনার কি কোনো প্রজেক্ট আছে?">Have a project in mind?</div><h2 data-en="Let’s make something great together." data-bn="চলুন একসঙ্গে দারুণ কিছু তৈরি করি।">Let’s make something great together.</h2><p data-en="Need a logo, poster, social media design, or a fresh visual identity? Send me a message and let’s discuss your project." data-bn="লোগো, পোস্টার, সোশ্যাল মিডিয়া ডিজাইন বা নতুন ব্র্যান্ড পরিচিতি দরকার? আপনার প্রজেক্ট নিয়ে মেসেজ করুন।">Need a logo, poster, social media design, or a fresh visual identity? Send me a message and let’s discuss your project.</p></div><div class="actions"><a class="btn" href="https://wa.me/8801726447040" target="_blank" rel="noopener" data-en="WhatsApp Me ↗" data-bn="হোয়াটসঅ্যাপে মেসেজ ↗">WhatsApp Me ↗</a><a class="btn alt" href="mailto:hello@abdulaziz.design" data-en="Email Me ↗" data-bn="ইমেইল করুন ↗">Email Me ↗</a></div></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year">2026</span> Abdul Aziz. All rights reserved.</span><span data-en="Designed with creativity ✳" data-bn="সৃজনশীলতায় তৈরি ✳">Designed with creativity ✳</span></div></footer>
+<script>
+(function(){
+ const en=document.getElementById('enBtn'), bn=document.getElementById('bnBtn');
+ function langTo(lang){
+  document.documentElement.lang=lang;
+  document.querySelectorAll('[data-en][data-bn]').forEach(el=>{
+   const value=el.getAttribute('data-'+lang);
+   if(!value)return;
+   if((el.tagName==='H1'||el.tagName==='H2')&&value.includes('|')){
+    const parts=value.split('|');
+    el.innerHTML=parts[0]+'<br><span>'+parts[1]+'</span>';
+   }else el.textContent=value;
+  });
+  en.classList.toggle('active',lang==='en');bn.classList.toggle('active',lang==='bn');
+  en.setAttribute('aria-pressed',lang==='en');bn.setAttribute('aria-pressed',lang==='bn');
+  document.title=lang==='bn'?'আব্দুল আজিজ | গ্রাফিক ডিজাইনার':'Abdul Aziz | Graphic Designer';
+ }
+ en.addEventListener('click',()=>langTo('en'));bn.addEventListener('click',()=>langTo('bn'));langTo('en');
+})();
+</script>
+</body>
+</html>
